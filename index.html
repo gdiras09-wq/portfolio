@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gerald Diras — Computer Engineering student exploring web development, programming, and embedded systems." />
+  <meta name="theme-color" content="#09091b" />
+  <title>Gerald Diras — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reference.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <header class="nav">
+    <a href="#home" class="nav-logo">Gerald<span>.</span></a>
+    <nav id="nav-menu" class="nav-links" aria-label="Primary">
+      <a href="#home" class="active" aria-current="location">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal">Welcome to my portfolio</p>
+        <h1 class="hero-title reveal">Hi, I'm <span>Gerald<br /> Diras</span></h1>
+        <p class="hero-role reveal">Computer Engineering Student</p>
+        <p class="hero-tagline reveal">Building ideas into meaningful digital experiences. I enjoy exploring web development, programming, and the connection between hardware and software.</p>
+        <div class="hero-cta reveal">
+          <a href="cv.txt" download="Gerald-Diras-CV.txt" class="btn btn-primary"><span aria-hidden="true">↧</span> Download CV</a>
+          <a href="#contact" class="btn btn-ghost"><span aria-hidden="true">✉</span> Contact Me</a>
+          <a href="#projects" class="btn btn-text">View my work <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="hero-note reveal"><span class="status-dot"></span> Always learning. Always building.</p>
+      </div>
+      <div class="lanyard-stage" id="lanyard-stage">
+        <div class="lanyard-glow" aria-hidden="true"></div>
+        <svg class="lace" id="lace" aria-hidden="true">
+          <defs><path id="lace-path" /></defs>
+          <use href="#lace-path" class="lace-edge" />
+          <use href="#lace-path" class="lace-body" />
+          <use href="#lace-path" class="lace-stitch" />
+          <text class="lace-lettering" dy="3"><textPath href="#lace-path" startOffset="20">GERALD DIRAS · CREATE &amp; EXPLORE · GERALD DIRAS ·</textPath></text>
+        </svg>
+        <div class="lanyard" id="lanyard">
+          <div class="lanyard-clip" aria-hidden="true"></div>
+          <button class="id-card" id="id-card" type="button" aria-label="Gerald Diras photo ID. Drag to swing, or use the arrow keys.">
+            <span class="id-hole" aria-hidden="true"></span>
+            <span class="id-topline"><span>GD / PORTFOLIO</span><span>2026</span></span>
+            <img src="assets/gerald.jpg" alt="Gerald Diras" width="960" height="1280" fetchpriority="high" draggable="false" />
+            <span class="id-overlay" aria-hidden="true"></span>
+            <span class="id-caption"><span class="id-script">Gerald.</span><span class="id-name">GERALD DIRAS</span><span class="id-role">COMPUTER ENGINEERING STUDENT</span></span>
+            <span class="id-bottom"><span><span class="status-dot"></span> CURIOUS BY NATURE</span><span>✦</span></span>
+          </button>
+        </div>
+        <p class="lanyard-hint"><span aria-hidden="true">↔</span> Go on, give it a swing</p>
+      </div>
+      <a href="#about" class="hero-scroll" aria-label="Scroll to about">
+        <span>SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal">A little introduction</p>
+        <h2 class="section-title reveal">About Me<span>.</span></h2>
+        <p class="section-intro reveal">A little about my background, what I love,<br />and the things I'm learning along the way.</p>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a creative Computer Engineering student with a passion for building practical websites, applications, and technology-driven projects. I enjoy combining programming, electronics, and system development to create solutions that are functional, user-friendly, and meaningful.
+            </p>
+            <p>
+              My work sits at the intersection of hardware and software — from web development and programming to Arduino, IoT, and embedded systems. I'm continuously learning new technologies and improving my skills as I work toward becoming a versatile and innovative developer.
+            </p>
+          </div>
+          <div class="about-details reveal">
+            <p class="detail-label">WHAT DRIVES ME</p>
+            <div class="about-stats">
+              <div class="stat"><span class="stat-num">&lt;/&gt;</span><span class="stat-label">Web Development</span></div>
+              <div class="stat"><span class="stat-num">⌘</span><span class="stat-label">Programming</span></div>
+              <div class="stat"><span class="stat-num">⚡</span><span class="stat-label">Embedded Systems</span></div>
+            </div>
+            <p class="detail-label interests-label">INTERESTS &amp; EXPLORATIONS</p>
+            <div class="interest-tags"><span>Creative development</span><span>Arduino &amp; IoT</span><span>Hardware + software</span><span>Thoughtful interfaces</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal">My digital toolbox</p>
+        <h2 class="section-title reveal">Skills &amp; <span>Technologies</span></h2>
+        <p class="section-intro reveal">Languages, tools, and technologies I’m exploring along the way.</p>
+        <div class="skill-filters reveal" role="group" aria-label="Filter skills">
+          <button class="skill-filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="skill-filter" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button class="skill-filter" type="button" data-filter="programming" aria-pressed="false">Programming</button>
+          <button class="skill-filter" type="button" data-filter="hardware" aria-pressed="false">Hardware &amp; IoT</button>
+          <button class="skill-filter" type="button" data-filter="tools" aria-pressed="false">Tools</button>
+        </div>
+        <div class="technology-grid reveal">
+          <article class="technology" data-category="frontend"><span class="tech-icon orange" aria-hidden="true">5</span><h3>HTML</h3><p>FRONTEND</p></article>
+          <article class="technology" data-category="frontend"><span class="tech-icon blue" aria-hidden="true">#</span><h3>CSS</h3><p>FRONTEND</p></article>
+          <article class="technology" data-category="frontend programming"><span class="tech-icon yellow" aria-hidden="true">JS</span><h3>JavaScript</h3><p>PROGRAMMING</p></article>
+          <article class="technology" data-category="programming"><span class="tech-icon blue" aria-hidden="true">Py</span><h3>Python</h3><p>PROGRAMMING</p></article>
+          <article class="technology" data-category="frontend"><span class="tech-icon cyan" aria-hidden="true">⚛</span><h3>React</h3><p>FRONTEND</p></article>
+          <article class="technology" data-category="programming"><span class="tech-icon blue" aria-hidden="true">TS</span><h3>TypeScript</h3><p>PROGRAMMING</p></article>
+          <article class="technology" data-category="hardware"><span class="tech-icon cyan" aria-hidden="true">∞</span><h3>Arduino</h3><p>HARDWARE &amp; IOT</p></article>
+          <article class="technology" data-category="hardware"><span class="tech-icon purple" aria-hidden="true">▧</span><h3>Embedded Systems</h3><p>HARDWARE &amp; IOT</p></article>
+          <article class="technology" data-category="tools"><span class="tech-icon orange" aria-hidden="true">⑂</span><h3>Git</h3><p>VERSION CONTROL</p></article>
+          <article class="technology" data-category="tools"><span class="tech-icon blue" aria-hidden="true">⌘</span><h3>VS Code</h3><p>DEVELOPMENT TOOLS</p></article>
+        </div>
+        <p class="skills-note" id="skills-status" role="status">A growing toolbox. A lifelong learning mindset.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal">Work</p>
+        <h2 class="section-title reveal">Selected <span>projects</span></h2>
+        <p class="section-intro reveal">Practical projects connecting web development, real-time systems, and hardware-inspired interfaces.</p>
+        <div class="projects-grid">
+
+          <article class="card reveal">
+            <div class="card-media" style="--hue: 200">
+              <img src="assets/smartqr-ordering.png" alt="SmartQR Ordering website showing customer ordering, cashier dashboard, and kitchen display interfaces" width="1440" height="900" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-body">
+              <h3>SmartQR Ordering</h3>
+              <p>A QR-based ordering system connecting customers, cashiers, and kitchen staff. Includes a mobile-friendly menu, cart and checkout, payment workflows, table QR codes, and live order tracking across three synchronized interfaces.</p>
+              <div class="card-tags"><span>JavaScript</span><span>Node.js</span><span>Express</span><span>Socket.IO</span><span>SQLite</span></div>
+              <span class="card-link">Full-stack web application / 01</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media" style="--hue: 300">
+              <img src="assets/trash-can-companion.png" alt="Autonomous Trash Can Companion dashboard showing fill levels, battery status, fleet monitoring, and trend charts" width="1440" height="900" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-body">
+              <h3>Autonomous Trash Can Companion</h3>
+              <p>A fleet-monitoring dashboard for Tanauan City College with simulated telemetry for five smart trash cans. Displays fill levels, battery status, trend charts, and event history, with device selection and interactive simulation controls.</p>
+              <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas</span><span>Telemetry Simulation</span></div>
+              <span class="card-link">Monitoring dashboard · App / 02</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal">My path so far</p>
+        <h2 class="section-title reveal">Journey <span>Timeline</span></h2>
+        <p class="section-intro reveal">Connecting curiosity, code, and the things I build.</p>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span class="timeline-dot" aria-hidden="true"></span><p class="timeline-date">NOW · LEARNING &amp; BUILDING</p><h3>Computer Engineering Student</h3><p>Exploring the connection between hardware and software through programming, electronics, and practical projects.</p><div class="card-tags"><span>Computer Engineering</span><span>Embedded Systems</span></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot" aria-hidden="true"></span><p class="timeline-date">THE NEXT CHAPTER</p><h3>Turning ideas into experiences</h3><p>Growing as a developer, building useful things, and finding new ways to bring technology into everyday life.</p><div class="card-tags"><span>Web Development</span><span>IoT</span><span>Always Curious</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container container-narrow">
+        <p class="section-eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal">Let's build something <span>together</span></h2>
+        <p class="contact-intro reveal">
+          Have an idea, a question, or just want to say hello? Let's connect.
+          This form prepares an email draft; add my email address before sending.
+        </p>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Doe" />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+        <div class="socials reveal">
+          <a href="https://github.com/gdiras09-wq" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://profile.indeed.com/?hl=en_US&amp;co=US&amp;from=gnav-jobsearch--indeedmobile" target="_blank" rel="noopener">Indeed</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Gerald Diras<span class="footer-divider">/</span> Designed with care. Built with curiosity.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/lanyard.js"></script>
+</body>
+</html>

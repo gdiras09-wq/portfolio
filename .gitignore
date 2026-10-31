@@ -1,0 +1,19 @@
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+.npmrc
+
+# Dependencies, logs, and editor settings
+node_modules/
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

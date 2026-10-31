@@ -1,0 +1,17 @@
+GERALD DIRAS
+Computer Engineering Student
+
+ABOUT
+I am a Computer Engineering student with an interest in building practical
+websites, applications, and technology-driven projects. I enjoy combining
+programming, electronics, and system development to create functional,
+user-friendly solutions.
+
+INTERESTS
+- Web development and programming
+- Arduino and the Internet of Things
+- Embedded systems
+- Hardware and software integration
+
+This is a starter CV. Add your contact information, education details,
+verified skills, and project experience before sharing it professionally.
