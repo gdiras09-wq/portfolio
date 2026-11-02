@@ -36,13 +36,13 @@
         <p class="hero-eyebrow reveal">Web development · Hardware + software</p>
         <h1 class="hero-title reveal">Hi, I'm <span>Gerald<br /> Diras</span></h1>
         <p class="hero-role reveal">Computer Engineering Student &middot; Class of 2027</p>
-        <p class="hero-tagline reveal">I build tools for everyday tasks: QR-based restaurant ordering and dashboards for smart devices. I'm a Computer Engineering student exploring how software connects people, workflows, and hardware.</p>
+        <p class="hero-tagline reveal">I build restaurant ordering tools and dashboards that make device data easier to understand.</p>
         <div class="hero-cta reveal">
           <a href="#projects" class="btn btn-primary">Explore my projects <span aria-hidden="true">↗</span></a>
           <a href="output/pdf/Gerald-Diras-CV.pdf" download="Gerald-Diras-CV.pdf" class="btn btn-ghost">Download CV (PDF)</a>
           <a href="#contact" class="btn btn-ghost"><span aria-hidden="true">✉</span> Contact Me</a>
         </div>
-        <p class="hero-note reveal"><span class="status-dot"></span> Tanauan City College &middot; Third year &middot; Expected graduation 2027.</p>
+        <p class="hero-note reveal"><span class="status-dot"></span> Tanauan City College &middot; Web development &amp; IoT</p>
       </div>
       <div class="lanyard-stage" id="lanyard-stage">
         <div class="lanyard-glow" aria-hidden="true"></div>
@@ -75,14 +75,14 @@
       <div class="container">
         <p class="section-eyebrow reveal">A little introduction</p>
         <h2 class="section-title reveal">About Me<span>.</span></h2>
-        <p class="section-intro reveal">A Computer Engineering student interested in useful software<br />and the devices it connects to.</p>
+        <p class="section-intro reveal">From a table QR code to a device dashboard.</p>
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              I'm Gerald, a third-year Computer Engineering student at Tanauan City College, with expected graduation in 2027. My interests span web development, electronics, and embedded systems. I like projects with a clear task to solve, whether that's helping restaurant staff follow an order or making device data easier to understand.
+              I like projects with a clear task to solve. For my thesis, I built SmartQR Ordering to connect customers, cashiers, and kitchen staff through one ordering workflow.
             </p>
             <p>
-              I independently built SmartQR Ordering for my thesis and the Autonomous Trash Can Companion dashboard for a classmate. These projects explore a QR ordering workflow for customers, cashiers, and kitchen staff, and a smart-bin dashboard using simulated telemetry. I'm also learning about Arduino and IoT as I explore the connection between a web interface and a physical device.
+              I also built a smart-bin dashboard for a classmate, using simulated readings to explore how a fleet of devices could be monitored. I'm currently learning Arduino and embedded systems to connect more of my web work to physical devices.
             </p>
           </div>
           <div class="about-details reveal">
@@ -103,7 +103,7 @@
       <div class="container">
         <p class="section-eyebrow reveal">Work</p>
         <h2 class="section-title reveal">Selected <span>projects</span></h2>
-        <p class="section-intro reveal">Two projects exploring ordering workflows and device monitoring.<br />Open the technical notes, then explore the source code.</p>
+        <p class="section-intro reveal">Try the dashboard, follow the ordering workflow, or explore the code.</p>
         <div class="projects-grid">
 
           <article class="card reveal">
@@ -124,7 +124,11 @@
                   <dt>The technical focus</dt><dd>Node.js and Express support the application, Socket.IO provides live updates, and SQLite stores data.</dd>
                 </dl>
               </details>
-              <a class="card-link" href="https://github.com/gdiras09-wq/SmartQR-Ordering" target="_blank" rel="noopener" aria-label="View SmartQR Ordering source code on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+              <div class="project-actions">
+                <a class="card-link" href="https://github.com/gdiras09-wq/SmartQR-Ordering#try-the-full-flow" target="_blank" rel="noopener">Setup &amp; walkthrough <span aria-hidden="true">↗</span></a>
+                <a class="card-link" href="https://github.com/gdiras09-wq/SmartQR-Ordering" target="_blank" rel="noopener" aria-label="View SmartQR Ordering source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
+              </div>
+              <p class="project-demo-note">Runs locally with Node.js. Includes simulated e-wallet payments.</p>
             </div>
           </article>
 
@@ -146,7 +150,11 @@
                   <dt>The technical focus</dt><dd>JavaScript drives the simulated readings and interactions, while Canvas renders trend charts. This project explores the monitoring interface before live device integration.</dd>
                 </dl>
               </details>
-              <a class="card-link" href="https://github.com/gdiras09-wq/App" target="_blank" rel="noopener" aria-label="View Autonomous Trash Can Companion source code on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+              <div class="project-actions">
+                <a class="card-link" href="demos/trash-can/" target="_blank" rel="noopener" aria-label="Try the smart-bin dashboard demo">Try the dashboard <span aria-hidden="true">↗</span></a>
+                <a class="card-link" href="https://github.com/gdiras09-wq/App" target="_blank" rel="noopener" aria-label="View Autonomous Trash Can Companion source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
+              </div>
+              <p class="project-demo-note">Select a bin, adjust its readings, and watch the charts change.</p>
             </div>
           </article>
 
@@ -158,28 +166,32 @@
       <div class="container">
         <p class="section-eyebrow reveal">My digital toolbox</p>
         <h2 class="section-title reveal">Skills &amp; <span>Technologies</span></h2>
-        <p class="section-intro reveal">Tools used in the selected projects, alongside technologies I'm learning.</p>
-        <p class="skills-evidence reveal">Project experience: HTML, CSS, JavaScript, Node.js, Express, Socket.IO, SQLite, and Canvas.<br />Also learning: Python, React, TypeScript, Arduino, and embedded systems.</p>
+        <p class="section-intro reveal">What I use to build, and what I'm learning next.</p>
         <div class="skill-filters reveal" role="group" aria-label="Filter skills">
           <button class="skill-filter active" type="button" data-filter="all" aria-pressed="true">All</button>
           <button class="skill-filter" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button class="skill-filter" type="button" data-filter="backend" aria-pressed="false">Backend</button>
           <button class="skill-filter" type="button" data-filter="programming" aria-pressed="false">Programming</button>
           <button class="skill-filter" type="button" data-filter="hardware" aria-pressed="false">Hardware &amp; IoT</button>
           <button class="skill-filter" type="button" data-filter="tools" aria-pressed="false">Tools</button>
         </div>
         <div class="technology-grid reveal">
-          <article class="technology" data-category="frontend"><span class="tech-icon orange" aria-hidden="true">5</span><h3>HTML</h3><p>FRONTEND</p></article>
-          <article class="technology" data-category="frontend"><span class="tech-icon blue" aria-hidden="true">#</span><h3>CSS</h3><p>FRONTEND</p></article>
-          <article class="technology" data-category="frontend programming"><span class="tech-icon yellow" aria-hidden="true">JS</span><h3>JavaScript</h3><p>PROGRAMMING</p></article>
-          <article class="technology" data-category="programming"><span class="tech-icon blue" aria-hidden="true">Py</span><h3>Python</h3><p>PROGRAMMING</p></article>
-          <article class="technology" data-category="frontend"><span class="tech-icon cyan" aria-hidden="true">⚛</span><h3>React</h3><p>FRONTEND</p></article>
-          <article class="technology" data-category="programming"><span class="tech-icon blue" aria-hidden="true">TS</span><h3>TypeScript</h3><p>PROGRAMMING</p></article>
-          <article class="technology" data-category="hardware"><span class="tech-icon cyan" aria-hidden="true">∞</span><h3>Arduino</h3><p>HARDWARE &amp; IOT</p></article>
-          <article class="technology" data-category="hardware"><span class="tech-icon purple" aria-hidden="true">▧</span><h3>Embedded Systems</h3><p>HARDWARE &amp; IOT</p></article>
-          <article class="technology" data-category="tools"><span class="tech-icon orange" aria-hidden="true">⑂</span><h3>Git</h3><p>VERSION CONTROL</p></article>
-          <article class="technology" data-category="tools"><span class="tech-icon blue" aria-hidden="true">⌘</span><h3>VS Code</h3><p>DEVELOPMENT TOOLS</p></article>
+          <article class="technology" data-category="frontend"><img class="tech-icon" src="assets/icons/html5.svg" alt="" width="36" height="36" loading="lazy" /><h3>HTML</h3><p class="skill-level">Used in projects</p></article>
+          <article class="technology" data-category="frontend"><img class="tech-icon" src="assets/icons/css3.svg" alt="" width="36" height="36" loading="lazy" /><h3>CSS</h3><p class="skill-level">Used in projects</p></article>
+          <article class="technology" data-category="frontend programming"><img class="tech-icon" src="assets/icons/javascript.svg" alt="" width="36" height="36" loading="lazy" /><h3>JavaScript</h3><p class="skill-level">Used in projects</p></article>
+          <article class="technology" data-category="backend programming"><img class="tech-icon" src="assets/icons/nodejs.svg" alt="" width="36" height="36" loading="lazy" /><h3>Node.js</h3><p class="skill-level">Used in projects</p></article>
+          <article class="technology" data-category="backend"><img class="tech-icon tech-icon-mono" src="assets/icons/express.svg" alt="" width="36" height="36" loading="lazy" /><h3>Express</h3><p class="skill-level">Used in projects</p></article>
+          <article class="technology" data-category="backend"><img class="tech-icon tech-icon-mono" src="assets/icons/socketio.svg" alt="" width="36" height="36" loading="lazy" /><h3>Socket.IO</h3><p class="skill-level">Used in projects</p></article>
+          <article class="technology" data-category="backend"><img class="tech-icon" src="assets/icons/sqlite.svg" alt="" width="36" height="36" loading="lazy" /><h3>SQLite</h3><p class="skill-level">Used in projects</p></article>
+          <article class="technology" data-category="tools"><img class="tech-icon" src="assets/icons/git.svg" alt="" width="36" height="36" loading="lazy" /><h3>Git</h3><p class="skill-level">Used in projects</p></article>
+          <article class="technology" data-category="tools"><img class="tech-icon" src="assets/icons/vscode.svg" alt="" width="36" height="36" loading="lazy" /><h3>VS Code</h3><p class="skill-level">Used in projects</p></article>
+          <article class="technology" data-category="programming"><img class="tech-icon" src="assets/icons/python.svg" alt="" width="36" height="36" loading="lazy" /><h3>Python</h3><p class="skill-level learning">Currently learning</p></article>
+          <article class="technology" data-category="frontend"><img class="tech-icon" src="assets/icons/react.svg" alt="" width="36" height="36" loading="lazy" /><h3>React</h3><p class="skill-level learning">Currently learning</p></article>
+          <article class="technology" data-category="frontend programming"><img class="tech-icon" src="assets/icons/typescript.svg" alt="" width="36" height="36" loading="lazy" /><h3>TypeScript</h3><p class="skill-level learning">Currently learning</p></article>
+          <article class="technology" data-category="hardware"><img class="tech-icon" src="assets/icons/arduino.svg" alt="" width="36" height="36" loading="lazy" /><h3>Arduino</h3><p class="skill-level learning">Currently learning</p></article>
+          <article class="technology" data-category="hardware"><img class="tech-icon" src="assets/icons/cpu.svg" alt="" width="36" height="36" loading="lazy" /><h3>Embedded Systems</h3><p class="skill-level learning">Currently learning</p></article>
         </div>
-        <p class="skills-note" id="skills-status" role="status">A growing toolbox. A lifelong learning mindset.</p>
+        <p class="skills-note" id="skills-status" role="status">14 technologies &middot; All</p>
       </div>
     </section>
 

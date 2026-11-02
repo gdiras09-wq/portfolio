@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dashboard | Autonomous Trash Can Companion - Tanauan City College</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="demo-banner">
+  <a href="../../#projects">&larr; Back to portfolio</a>
+  <span>Interactive demo &middot; Simulated readings, no live hardware</span>
+</div>
+
+<div class="bar"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="seal-sm">
+      <img src="tcc-logo.svg" alt="Tanauan City College seal">
+    </div>
+    <h1>
+      <span class="pill">Autonomous Trash Can Companion</span>
+      <small>Tanauan City College &middot; Fleet Monitoring Dashboard</small>
+    </h1>
+  </div>
+  <div class="spacer"></div>
+    <div class="clock" id="clock">--:--:--</div>
+  <div class="live-pill" id="livePill">● SIMULATION RUNNING</div>
+</header>
+
+<div class="layout">
+  <aside>
+    <div class="sec">MENU</div>
+    <nav>
+      <a href="#overview"><span class="ico">&#9632;</span> Overview</a>
+      <a href="#devices"><span class="ico">&#9723;</span> Devices</a>
+      <a href="#analytics"><span class="ico">&#9650;</span> Analytics</a>
+      <a href="#alerts"><span class="ico">&#9888;</span> Alerts</a>
+      <a href="#controls"><span class="ico">&#9881;</span> Simulation controls</a>
+    </nav>
+    <div class="legend">
+      <div class="sec" style="margin:8px 0 0">STATUS KEY</div>
+      <div><span class="dot g"></span> Functional</div>
+      <div><span class="dot o"></span> Nearly full</div>
+      <div><span class="dot r"></span> Needs attention</div>
+      <div style="margin-top:10px;color:#5F6871">Units monitored: <b style="color:#fff">5</b></div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- KPIs -->
+    <section class="kpis" id="overview" aria-label="Fleet overview">
+      <div class="card kpi">
+        <div class="ico t">&#128465;</div>
+        <div>
+          <div class="val" id="kpiFill">90%</div>
+          <div class="lbl">Avg Fill Level</div>
+          <div class="delta" id="kpiFillD">Fleet trend unavailable</div>
+        </div>
+      </div>
+      <div class="card kpi">
+        <div class="ico b">&#9889;</div>
+        <div>
+          <div class="val" id="kpiBatt">100%</div>
+          <div class="lbl">Avg Battery</div>
+          <div class="delta" id="kpiBattD">Fleet trend unavailable</div>
+        </div>
+      </div>
+      <div class="card kpi">
+        <div class="ico u">&#128230;</div>
+        <div>
+          <div class="val" id="kpiOnline">5/5</div>
+          <div class="lbl">Units Online</div>
+          <div class="delta">all reporting</div>
+        </div>
+      </div>
+      <div class="card kpi">
+        <div class="ico a">&#9888;</div>
+        <div>
+          <div class="val" id="kpiAlerts">0</div>
+          <div class="lbl">Active Alerts</div>
+          <div class="delta" id="kpiAlertsD">no issues</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row: monitor + charts -->
+    <section class="grid">
+      <div class="card">
+        <h3>Live Monitor <span class="tag" id="monId">TCC-01</span></h3>
+        <div class="monitor">
+          <div>
+            <div class="can">
+              <div class="fill" id="fill"></div>
+              <div class="pct" id="fillPct">90%</div>
+            </div>
+            <div class="monitor-meta" style="justify-content:center"><span>FILL</span></div>
+          </div>
+          <div>
+            <div class="battery" id="battery">
+              <div class="seg"></div><div class="seg"></div><div class="seg"></div>
+              <div class="seg"></div><div class="seg"></div>
+              <div class="battery-label" id="battPct">100%</div>
+            </div>
+            <div class="monitor-meta" style="justify-content:center"><span>BATTERY</span></div>
+          </div>
+        </div>
+        <div class="status-chip" id="status">Current Status: Functional</div>
+        <div class="monitor-meta">
+          <span>Unit</span><b id="monName">Main Lobby Bin</b>
+        </div>
+        <div class="monitor-meta">
+          <span>Location</span><b id="monLoc">Administration Bldg</b>
+        </div>
+
+        <div class="controls" id="controls">
+          <label class="ctrl">
+            <span class="row"><span>Fill Level</span><span id="fillVal">90%</span></span>
+            <input type="range" id="fillRange" min="0" max="100" value="90">
+          </label>
+          <label class="ctrl">
+            <span class="row"><span>Battery</span><span id="battVal">100%</span></span>
+            <input type="range" id="battRange" min="0" max="100" value="100">
+          </label>
+          <div class="btn-row">
+            <button class="btn" id="toggle">Pause Sim</button>
+            <button class="btn" id="reset">Reset Unit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card span2" id="analytics">
+        <h3>Simulated Fill Level Trend
+          <span class="chart-legend"><span><i style="background:#2AA9C4"></i>Selected unit</span></span>
+        </h3>
+        <div class="chart-wrap"><canvas id="fillChart"></canvas></div>
+
+        <h3 style="margin-top:14px">Simulated Battery Trend
+          <span class="chart-legend"><span><i style="background:#3EB45A"></i>Selected unit</span></span>
+        </h3>
+        <div class="chart-wrap"><canvas id="battChart"></canvas></div>
+      </div>
+    </section>
+
+    <!-- Row: table + alerts -->
+    <section class="grid">
+      <div class="card span2" id="devices">
+        <h3>Device Fleet <span class="tag">5 UNITS</span></h3>
+        <div class="table-wrap"><table>
+          <thead>
+            <tr>
+              <th>Unit</th><th>Location</th><th>Fill</th><th>Battery</th>
+              <th>Status</th><th>Updated</th>
+            </tr>
+          </thead>
+          <tbody id="deviceRows"></tbody>
+        </table></div>
+      </div>
+
+      <div class="card" id="alerts">
+        <h3>Event History <span class="tag" id="alertTag">0 ACTIVE UNITS</span></h3>
+        <div class="alerts" id="alertList"></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <span>Tanauan City College</span>
+  <span class="muted">Autonomous Trash Can Companion &middot; Sample Telemetry Dashboard</span>
+  <span id="footLive" style="color:#3EB45A">● simulation running</span>
+</footer>
+
+<div class="bar"></div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

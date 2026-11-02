@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <path id="arcTop" d="M 25,100 A 75,75 0 0 1 175,100"/>
+    <path id="arcBot" d="M 30,100 A 70,70 0 0 0 170,100"/>
+    <path id="star" d="M0,-6 L1.76,-2.4 5.7,-1.85 2.7,1.1 3.5,5.1 0,2.8 -3.5,5.1 -2.7,1.1 -5.7,-1.85 -1.76,-2.4 Z"/>
+    <path id="leaf" d="M0,0 Q7,-6 15,0 Q7,6 0,0 Z"/>
+    <radialGradient id="disc" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#FFF6C9"/>
+      <stop offset="100%" stop-color="#FFD400"/>
+    </radialGradient>
+  </defs>
+
+  <!-- outer ring -->
+  <circle cx="100" cy="100" r="99" fill="url(#disc)" stroke="#C8102E" stroke-width="2"/>
+  <circle cx="100" cy="100" r="94" fill="none" stroke="#C8102E" stroke-width="1.5"/>
+
+  <!-- ring text -->
+  <text font-family="Arial Black, Arial, sans-serif" font-size="19" font-weight="900"
+        fill="#1B4FA0" letter-spacing="1.2">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">TANAUAN CITY COLLEGE</textPath>
+  </text>
+  <text font-family="Arial, sans-serif" font-size="13" font-weight="800"
+        fill="#C8102E" letter-spacing="1.5">
+    <textPath href="#arcBot" startOffset="50%" text-anchor="middle">FOUNDED 2013</textPath>
+  </text>
+
+  <!-- side stars -->
+  <use href="#star" x="0" y="0" transform="translate(18,100) scale(1.25)" fill="#C8102E"/>
+  <use href="#star" x="0" y="0" transform="translate(182,100) scale(1.25)" fill="#C8102E"/>
+  <use href="#star" x="0" y="0" transform="translate(45,152) scale(0.9)" fill="#C8102E"/>
+  <use href="#star" x="0" y="0" transform="translate(155,152) scale(0.9)" fill="#C8102E"/>
+
+  <!-- inner disc -->
+  <circle cx="100" cy="100" r="62" fill="#FFFDF2" stroke="#C8102E" stroke-width="3"/>
+  <circle cx="100" cy="100" r="56" fill="none" stroke="#1B4FA0" stroke-width="1"/>
+
+  <!-- leaf wreath: red left, green right -->
+  <g>
+    <use href="#leaf" transform="translate(48,74) rotate(115)" fill="#D62828"/>
+    <use href="#leaf" transform="translate(44,96) rotate(100)" fill="#D62828"/>
+    <use href="#leaf" transform="translate(47,118) rotate(85)"  fill="#D62828"/>
+    <use href="#leaf" transform="translate(55,138) rotate(70)"  fill="#D62828"/>
+    <use href="#leaf" transform="translate(68,152) rotate(58)"  fill="#D62828"/>
+    <use href="#leaf" transform="translate(84,161) rotate(48)"  fill="#D62828"/>
+    <use href="#leaf" transform="translate(100,164) rotate(90)" fill="#2E9A49"/>
+    <use href="#leaf" transform="translate(116,161) rotate(132)" fill="#2E9A49"/>
+    <use href="#leaf" transform="translate(132,152) rotate(122)" fill="#2E9A49"/>
+    <use href="#leaf" transform="translate(145,138) rotate(110)" fill="#2E9A49"/>
+    <use href="#leaf" transform="translate(153,118) rotate(95)"  fill="#2E9A49"/>
+    <use href="#leaf" transform="translate(156,96)  rotate(80)"  fill="#2E9A49"/>
+    <use href="#leaf" transform="translate(152,74)  rotate(65)"  fill="#2E9A49"/>
+    <use href="#leaf" transform="translate(52,60) rotate(130)" fill="#2E9A49"/>
+    <use href="#leaf" transform="translate(148,60) rotate(50)" fill="#2E9A49"/>
+  </g>
+
+  <!-- red plume -->
+  <path d="M100,116 C95,96 106,78 98,58 C112,70 116,98 108,118 Z" fill="#C8102E"/>
+  <path d="M100,116 C99,100 102,86 100,70" fill="none" stroke="#8E0B1F" stroke-width="1.2"/>
+
+  <!-- left portrait -->
+  <g stroke="#333" stroke-width="1.4">
+    <path d="M74,112 q6,-8 12,0 v8 h-12 Z" fill="#E9EFF3"/>
+    <ellipse cx="80" cy="95" rx="12" ry="14" fill="#EDF2F5"/>
+    <path d="M68,92 q0,-16 12,-16 q12,0 12,16 q-4,-8 -12,-8 q-8,0 -12,8 Z" fill="#2B2B2B" stroke="none"/>
+    <circle cx="76" cy="96" r="1.6" fill="#222" stroke="none"/>
+    <circle cx="84" cy="96" r="1.6" fill="#222" stroke="none"/>
+    <path d="M77,103 q3,3 6,0" fill="none"/>
+  </g>
+
+  <!-- right portrait -->
+  <g stroke="#333" stroke-width="1.4">
+    <path d="M114,112 q6,-8 12,0 v8 h-12 Z" fill="#E9EFF3"/>
+    <ellipse cx="120" cy="95" rx="12" ry="14" fill="#EDF2F5"/>
+    <path d="M108,94 q0,-18 12,-18 q12,0 12,18 q-3,-10 -12,-10 q-9,0 -12,10 Z" fill="#2B2B2B" stroke="none"/>
+    <circle cx="116" cy="96" r="1.6" fill="#222" stroke="none"/>
+    <circle cx="124" cy="96" r="1.6" fill="#222" stroke="none"/>
+    <path d="M117,103 q3,3 6,0" fill="none"/>
+  </g>
+
+  <!-- open book -->
+  <g stroke="#222" stroke-width="1.6" stroke-linejoin="round">
+    <path d="M100,124 L76,117 L76,137 L100,144 Z" fill="#FFFFFF"/>
+    <path d="M100,124 L124,117 L124,137 L100,144 Z" fill="#FFFFFF"/>
+    <path d="M100,124 L100,144" fill="none"/>
+    <g stroke="#9AA4AC" stroke-width="1">
+      <path d="M82,124 L95,128 M82,130 L95,134 M105,128 L118,124 M105,134 L118,130"/>
+    </g>
+  </g>
+</svg>
