@@ -136,3 +136,22 @@ body::before { display: none; }
   .timeline-item h3 { font-size: 16px; }
   .contact-form { padding: 20px; }
 }
+
+/* Project notes and direct contact links. */
+.skills-evidence { max-width: 720px; margin: -18px auto 30px; text-align: center; color: var(--text-muted); font-size: 12px; line-height: 1.9; }
+.card-body .project-context { color: var(--accent-2); font-size: 11px; }
+.project-details { border-top: 1px solid var(--border); margin: 18px 0; padding-top: 14px; }
+.project-details summary { cursor: pointer; color: var(--text); font-size: 12px; padding: 6px 0; }
+.project-details summary:hover { color: var(--accent-2); }
+.project-details dl { margin-top: 14px; font-size: 12px; }
+.project-details dt { color: var(--text); font-weight: 600; margin-top: 12px; }
+.project-details dd { color: var(--text-muted); margin-top: 4px; line-height: 1.8; }
+.contact-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+@media (max-width: 640px) {
+  .hero-content { grid-row: 1; padding-top: 110px; }
+  .lanyard-stage { grid-row: 2; height: 610px; margin-top: 35px; }
+  .skills-evidence { font-size: 11px; }
+  .contact-actions { flex-direction: column; align-items: stretch; }
+}
+
+.contact-email { color: var(--accent-2); text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }

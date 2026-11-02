@@ -99,25 +99,4 @@
     });
   }
 
-  /* ---------- Contact form (mailto fallback) ---------- */
-  const form = document.getElementById('contact-form');
-  const status = document.getElementById('form-status');
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const data = new FormData(form);
-    const name = data.get('name').trim();
-    const email = data.get('email').trim();
-    const message = data.get('message').trim();
-
-    if (!name || !email || !message) {
-      status.textContent = 'Please fill in all fields.';
-      return;
-    }
-
-    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:?subject=${subject}&body=${body}`;
-    status.textContent = 'Opening your email app. Add Gerald’s email address to send your message.';
-  });
 })();

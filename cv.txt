@@ -1,17 +1,35 @@
 GERALD DIRAS
 Computer Engineering Student
+Email: gdiras09@gmail.com
+GitHub: https://github.com/gdiras09-wq
 
-ABOUT
-I am a Computer Engineering student with an interest in building practical
-websites, applications, and technology-driven projects. I enjoy combining
-programming, electronics, and system development to create functional,
-user-friendly solutions.
+PROFILE
+Third-year Computer Engineering student at Tanauan City College, with
+expected graduation in 2027. Independently built a QR ordering system
+for a thesis project and a smart-bin monitoring dashboard for a classmate.
+Interests include web development, embedded systems, Arduino, and IoT.
 
-INTERESTS
-- Web development and programming
-- Arduino and the Internet of Things
-- Embedded systems
-- Hardware and software integration
+EDUCATION
+Tanauan City College
+Computer Engineering | Third year | Expected graduation: 2027
 
-This is a starter CV. Add your contact information, education details,
-verified skills, and project experience before sharing it professionally.
+SELECTED PROJECTS
+SmartQR Ordering | Thesis project | Sole developer
+- Independently built customer, cashier, and kitchen interfaces.
+- Features table QR codes, menu browsing, cart and checkout, payment
+  workflows, and live order tracking.
+- Technologies: JavaScript, Node.js, Express, Socket.IO, SQLite.
+- Source: https://github.com/gdiras09-wq/SmartQR-Ordering
+
+Autonomous Trash Can Companion | Built for a classmate | Sole developer
+- Independently built a dashboard for five simulated smart trash cans.
+- Includes device selection, fill levels, battery readings, trend charts,
+  event history, and interactive simulation controls.
+- Uses simulated telemetry; no live hardware connection.
+- Technologies: HTML, CSS, JavaScript, Canvas.
+- Source: https://github.com/gdiras09-wq/App
+
+TECHNOLOGIES
+Project experience: HTML, CSS, JavaScript, Node.js, Express, Socket.IO,
+SQLite, Canvas.
+Currently learning: Python, React, TypeScript, Arduino, embedded systems.

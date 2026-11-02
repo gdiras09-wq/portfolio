@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Gerald Diras — Computer Engineering student exploring web development, programming, and embedded systems." />
+  <meta name="description" content="Gerald Diras, Computer Engineering student building QR ordering tools, interactive dashboards, and projects connecting software with hardware." />
   <meta name="theme-color" content="#09091b" />
   <title>Gerald Diras — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,9 +21,8 @@
     <nav id="nav-menu" class="nav-links" aria-label="Primary">
       <a href="#home" class="active" aria-current="location">Home</a>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#journey">Journey</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
     <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
@@ -34,16 +33,16 @@
   <main>
     <section id="home" class="hero">
       <div class="hero-content">
-        <p class="hero-eyebrow reveal">Welcome to my portfolio</p>
+        <p class="hero-eyebrow reveal">Web development · Hardware + software</p>
         <h1 class="hero-title reveal">Hi, I'm <span>Gerald<br /> Diras</span></h1>
-        <p class="hero-role reveal">Computer Engineering Student</p>
-        <p class="hero-tagline reveal">Building ideas into meaningful digital experiences. I enjoy exploring web development, programming, and the connection between hardware and software.</p>
+        <p class="hero-role reveal">Computer Engineering Student &middot; Class of 2027</p>
+        <p class="hero-tagline reveal">I build tools for everyday tasks: QR-based restaurant ordering and dashboards for smart devices. I'm a Computer Engineering student exploring how software connects people, workflows, and hardware.</p>
         <div class="hero-cta reveal">
-          <a href="cv.txt" download="Gerald-Diras-CV.txt" class="btn btn-primary"><span aria-hidden="true">↧</span> Download CV</a>
+          <a href="#projects" class="btn btn-primary">Explore my projects <span aria-hidden="true">↗</span></a>
+          <a href="output/pdf/Gerald-Diras-CV.pdf" download="Gerald-Diras-CV.pdf" class="btn btn-ghost">Download CV (PDF)</a>
           <a href="#contact" class="btn btn-ghost"><span aria-hidden="true">✉</span> Contact Me</a>
-          <a href="#projects" class="btn btn-text">View my work <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="hero-note reveal"><span class="status-dot"></span> Always learning. Always building.</p>
+        <p class="hero-note reveal"><span class="status-dot"></span> Tanauan City College &middot; Third year &middot; Expected graduation 2027.</p>
       </div>
       <div class="lanyard-stage" id="lanyard-stage">
         <div class="lanyard-glow" aria-hidden="true"></div>
@@ -76,14 +75,14 @@
       <div class="container">
         <p class="section-eyebrow reveal">A little introduction</p>
         <h2 class="section-title reveal">About Me<span>.</span></h2>
-        <p class="section-intro reveal">A little about my background, what I love,<br />and the things I'm learning along the way.</p>
+        <p class="section-intro reveal">A Computer Engineering student interested in useful software<br />and the devices it connects to.</p>
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              I'm a creative Computer Engineering student with a passion for building practical websites, applications, and technology-driven projects. I enjoy combining programming, electronics, and system development to create solutions that are functional, user-friendly, and meaningful.
+              I'm Gerald, a third-year Computer Engineering student at Tanauan City College, with expected graduation in 2027. My interests span web development, electronics, and embedded systems. I like projects with a clear task to solve, whether that's helping restaurant staff follow an order or making device data easier to understand.
             </p>
             <p>
-              My work sits at the intersection of hardware and software — from web development and programming to Arduino, IoT, and embedded systems. I'm continuously learning new technologies and improving my skills as I work toward becoming a versatile and innovative developer.
+              I independently built SmartQR Ordering for my thesis and the Autonomous Trash Can Companion dashboard for a classmate. These projects explore a QR ordering workflow for customers, cashiers, and kitchen staff, and a smart-bin dashboard using simulated telemetry. I'm also learning about Arduino and IoT as I explore the connection between a web interface and a physical device.
             </p>
           </div>
           <div class="about-details reveal">
@@ -100,11 +99,67 @@
       </div>
     </section>
 
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal">Work</p>
+        <h2 class="section-title reveal">Selected <span>projects</span></h2>
+        <p class="section-intro reveal">Two projects exploring ordering workflows and device monitoring.<br />Open the technical notes, then explore the source code.</p>
+        <div class="projects-grid">
+
+          <article class="card reveal">
+            <div class="card-media" style="--hue: 200">
+              <img src="assets/smartqr-ordering.png" alt="SmartQR Ordering website showing customer ordering, cashier dashboard, and kitchen display interfaces" width="1440" height="900" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-body">
+              <h3>SmartQR Ordering</h3>
+              <p>Customers scan a table QR code to browse a menu and place an order. Cashier and kitchen views follow the same order through payment and preparation, with live status updates across all three interfaces.</p>
+              <p class="project-context">Thesis project &middot; Sole developer</p>
+              <div class="card-tags"><span>JavaScript</span><span>Node.js</span><span>Express</span><span>Socket.IO</span><span>SQLite</span></div>
+              <details class="project-details">
+                <summary>Inside the project</summary>
+                <dl>
+                  <dt>My role</dt><dd>Sole developer. I built the system independently for my thesis, including the customer, cashier, and kitchen interfaces.</dd>
+                  <dt>The problem</dt><dd>Keeping customers, cashiers, and kitchen staff informed as an order moves between them.</dd>
+                  <dt>The workflow</dt><dd>Table QR code → menu and cart → checkout → cashier and kitchen tracking.</dd>
+                  <dt>The technical focus</dt><dd>Node.js and Express support the application, Socket.IO provides live updates, and SQLite stores data.</dd>
+                </dl>
+              </details>
+              <a class="card-link" href="https://github.com/gdiras09-wq/SmartQR-Ordering" target="_blank" rel="noopener" aria-label="View SmartQR Ordering source code on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media" style="--hue: 300">
+              <img src="assets/trash-can-companion.png" alt="Autonomous Trash Can Companion dashboard showing fill levels, battery status, fleet monitoring, and trend charts" width="1440" height="900" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-body">
+              <h3>Autonomous Trash Can Companion</h3>
+              <p>A dashboard for a five-bin fleet at Tanauan City College. Device selection, fill levels, battery readings, trend charts, and event history help make changing device conditions easier to inspect.</p>
+              <p class="project-context">Built for a classmate &middot; Sole developer &middot; Simulated telemetry</p>
+              <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas</span><span>Telemetry Simulation</span></div>
+              <details class="project-details">
+                <summary>Inside the project</summary>
+                <dl>
+                  <dt>My role</dt><dd>Sole developer. I independently built this dashboard for a classmate, including its interface, charts, and telemetry simulation.</dd>
+                  <dt>The problem</dt><dd>Making the condition of several smart bins visible in one place.</dd>
+                  <dt>The workflow</dt><dd>Select a device → inspect its readings and history → use simulation controls to explore changes.</dd>
+                  <dt>The technical focus</dt><dd>JavaScript drives the simulated readings and interactions, while Canvas renders trend charts. This project explores the monitoring interface before live device integration.</dd>
+                </dl>
+              </details>
+              <a class="card-link" href="https://github.com/gdiras09-wq/App" target="_blank" rel="noopener" aria-label="View Autonomous Trash Can Companion source code on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
     <section id="skills" class="section">
       <div class="container">
         <p class="section-eyebrow reveal">My digital toolbox</p>
         <h2 class="section-title reveal">Skills &amp; <span>Technologies</span></h2>
-        <p class="section-intro reveal">Languages, tools, and technologies I’m exploring along the way.</p>
+        <p class="section-intro reveal">Tools used in the selected projects, alongside technologies I'm learning.</p>
+        <p class="skills-evidence reveal">Project experience: HTML, CSS, JavaScript, Node.js, Express, Socket.IO, SQLite, and Canvas.<br />Also learning: Python, React, TypeScript, Arduino, and embedded systems.</p>
         <div class="skill-filters reveal" role="group" aria-label="Filter skills">
           <button class="skill-filter active" type="button" data-filter="all" aria-pressed="true">All</button>
           <button class="skill-filter" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
@@ -128,82 +183,18 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <p class="section-eyebrow reveal">Work</p>
-        <h2 class="section-title reveal">Selected <span>projects</span></h2>
-        <p class="section-intro reveal">Practical projects connecting web development, real-time systems, and hardware-inspired interfaces.</p>
-        <div class="projects-grid">
-
-          <article class="card reveal">
-            <div class="card-media" style="--hue: 200">
-              <img src="assets/smartqr-ordering.png" alt="SmartQR Ordering website showing customer ordering, cashier dashboard, and kitchen display interfaces" width="1440" height="900" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <h3>SmartQR Ordering</h3>
-              <p>A QR-based ordering system connecting customers, cashiers, and kitchen staff. Includes a mobile-friendly menu, cart and checkout, payment workflows, table QR codes, and live order tracking across three synchronized interfaces.</p>
-              <div class="card-tags"><span>JavaScript</span><span>Node.js</span><span>Express</span><span>Socket.IO</span><span>SQLite</span></div>
-              <a class="card-link" href="https://github.com/gdiras09-wq/SmartQR-Ordering" target="_blank" rel="noopener" aria-label="View SmartQR Ordering source code on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-media" style="--hue: 300">
-              <img src="assets/trash-can-companion.png" alt="Autonomous Trash Can Companion dashboard showing fill levels, battery status, fleet monitoring, and trend charts" width="1440" height="900" loading="lazy" decoding="async" />
-            </div>
-            <div class="card-body">
-              <h3>Autonomous Trash Can Companion</h3>
-              <p>A fleet-monitoring dashboard for Tanauan City College with simulated telemetry for five smart trash cans. Displays fill levels, battery status, trend charts, and event history, with device selection and interactive simulation controls.</p>
-              <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas</span><span>Telemetry Simulation</span></div>
-              <a class="card-link" href="https://github.com/gdiras09-wq/App" target="_blank" rel="noopener" aria-label="View Autonomous Trash Can Companion source code on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="journey" class="section">
-      <div class="container">
-        <p class="section-eyebrow reveal">My path so far</p>
-        <h2 class="section-title reveal">Journey <span>Timeline</span></h2>
-        <p class="section-intro reveal">Connecting curiosity, code, and the things I build.</p>
-        <div class="timeline">
-          <article class="timeline-item reveal"><span class="timeline-dot" aria-hidden="true"></span><p class="timeline-date">NOW · LEARNING &amp; BUILDING</p><h3>Computer Engineering Student</h3><p>Exploring the connection between hardware and software through programming, electronics, and practical projects.</p><div class="card-tags"><span>Computer Engineering</span><span>Embedded Systems</span></div></article>
-          <article class="timeline-item reveal"><span class="timeline-dot" aria-hidden="true"></span><p class="timeline-date">THE NEXT CHAPTER</p><h3>Turning ideas into experiences</h3><p>Growing as a developer, building useful things, and finding new ways to bring technology into everyday life.</p><div class="card-tags"><span>Web Development</span><span>IoT</span><span>Always Curious</span></div></article>
-        </div>
-      </div>
-    </section>
-
     <section id="contact" class="section">
       <div class="container container-narrow">
         <p class="section-eyebrow reveal">Contact</p>
         <h2 class="section-title reveal">Let's build something <span>together</span></h2>
         <p class="contact-intro reveal">
-          Have an idea, a question, or just want to say hello? Let's connect.
-          This form prepares an email draft; add my email address before sending.
+          Interested in a project or want to collaborate? Email me at
+          <a class="contact-email" href="mailto:gdiras09@gmail.com">gdiras09@gmail.com</a>.
         </p>
-        <form class="contact-form reveal" id="contact-form">
-          <div class="form-row">
-            <div class="form-field">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required placeholder="Jane Doe" />
-            </div>
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="jane@example.com" />
-            </div>
-          </div>
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-status" id="form-status" role="status"></p>
-        </form>
-        <div class="socials reveal">
-          <a href="https://github.com/gdiras09-wq" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://profile.indeed.com/?hl=en_US&amp;co=US&amp;from=gnav-jobsearch--indeedmobile" target="_blank" rel="noopener">Indeed</a>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary" href="mailto:gdiras09@gmail.com">Email me <span aria-hidden="true">&#9993;</span></a>
+          <a class="btn btn-ghost" href="https://github.com/gdiras09-wq" target="_blank" rel="noopener">Visit my GitHub <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="output/pdf/Gerald-Diras-CV.pdf" download="Gerald-Diras-CV.pdf">Download CV (PDF)</a>
         </div>
       </div>
     </section>
