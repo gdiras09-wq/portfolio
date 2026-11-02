@@ -70,6 +70,7 @@ body::before { display: none; }
 .detail-label { font-size: 9px; letter-spacing: 1.6px; color: #b3accd; }
 .about-stats { gap: 10px; margin-top: 14px; }
 .stat { padding: 18px 6px; background: #9380e307; border-radius: 9px; }
+.about-icon { display: block; width: 28px; height: 28px; margin: 0 auto; fill: none; stroke: #bac3d9; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .stat-label { font-size: 9px; }
 .interests-label { margin-top: 25px; }
 .interest-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
